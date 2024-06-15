@@ -1,12 +1,17 @@
 document.querySelector('form').addEventListener('submit', function(event) {
-  event.preventDefault();
-  const username = document.querySelector('input[type="text"]').value;
-  const password = document.querySelector('input[type="password"]').value;
+    event.preventDefault(); // prevent the form from submitting
 
-  if (!username || !password) {
-      document.querySelector('.error-message').style.display = 'block';
-  } else {
-      document.querySelector('.error-message').style.display = 'none';
-      // Perform login action here
-  }
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    var correctUsername = "admin"; // replace with the correct username
+    var correctPassword = "1234"; // replace with the correct password
+
+    if (username !== correctUsername || password !== correctPassword) {
+        // show the error message
+        document.getElementById('error-message').style.display = 'block';
+    } else {
+        // hide the error message
+        document.getElementById('error-message').style.display = 'none';
+    }
 });
