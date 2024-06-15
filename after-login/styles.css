@@ -1,70 +1,110 @@
-/* Add this to the existing styles */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* This will remove horizontal scroll */
+}
 
-header {
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* Rest of your CSS */
+.logo {
+  height: 30px;
+}
+.user {
+  height: 30px;
+}
+
+li {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.used {
+  display: flex;
+  float: right;
+  margin-top: 7px;
+}
+
+.used ul {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.used ul li img {
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}
+
+.used ul li:not(:first-child) {
+  margin-left: -15px;
+}
+
+.used p {
+  font-size: 13px;
+  color: #656565;
+  line-height: 18px;
+  font-weight: 300;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.btn {
+  background-color: #2799e7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.txt{
+    color: white;
+    text-decoration: none;
+}
+
+.part-two {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.9);
+    margin-left: auto;
 }
 
-header h1 {
-    color: #007bff;
-}
-
-header .btn {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-main {
+.heading {
+    font-size: 60px;
     text-align: center;
-    margin-top: 20px;
 }
 
-main h2 {
-    color: #007bff;
-    margin-bottom: 20px;
+.way b {
+    position: relative;
+    display: inline-block;
+    text-transform: none;
+    animation: animate 1.5s ease-in-out infinite;
+    animation-delay: calc(var(--n) * 0.1s);
 }
 
-.search-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+:root {
+  --n: 1;
 }
 
-.search-bar select {
-    padding: 10px;
-    border: 1px solid #007bff;
-    border-radius: 5px;
-    outline: none;
-}
-
-.search-bar .btn {
-    margin-left: 10px;
-}
-
-.inventory {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.inventory div {
-    margin-bottom: 20px;
-}
-
-.inventory button {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 5px;
+@keyframes animate {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(calc(var(--n) * -10px));
+    }
 }
