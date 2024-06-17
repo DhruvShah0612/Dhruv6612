@@ -81,9 +81,23 @@ ul {
 }
 
 .image-container {
-  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  width: 900px;
   border: 1px solid black;
   border-radius: 10px;
+  margin: 0 auto;
+}
+
+.image-container > div:nth-child(4) {
+  grid-column: span 3;
+}
+
+.section-img,
+.image-down img {
+  width: 100%;
+  height: auto;
 }
 
 .sec-para p {
@@ -95,7 +109,7 @@ ul {
   padding: 0 10px;
 }
 
-.main-paragraph{
+.main-paragraph {
   padding: 5px 10px;
   display: flex;
   gap: 2px;
