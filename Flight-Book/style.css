@@ -178,7 +178,7 @@ ul {
 
 .footer-title {
   color: #4440e2;
-  margin: 40px 20px 2px 1px;
+  margin-left: 220px;
 }
 
 .footer-txt {
@@ -195,4 +195,50 @@ ul {
   justify-content: center;
   flex-wrap: wrap;
   gap: 80px;
+}
+
+.apple-list {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  gap: 5px;
+  color: white;
+}
+
+.download-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  gap: 3px;
+  color: white;
+  padding: 10px;
+}
+
+.download-text,
+.app-store {
+  color: white; /* Change the text color */
+  font-size: 20px; /* Change the font size */
+  text-align: center; /* Center the text */
+  margin: 0; /* Remove default paragraph margins */
+}
+
+.download-text {
+  font-size: 10px;
+}
+
+.footer-end {
+  /* border: 1px solid lightgray; */
+  padding: 20px;
+  margin: 30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  color: #6e7491;
+}
+
+.end-txt {
+  text-align: right;
 }
