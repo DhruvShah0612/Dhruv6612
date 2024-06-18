@@ -125,3 +125,15 @@ ul {
 .image{
   width: 300px;
 }
+
+.image-section{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.btn.button {
+  display: block;
+  margin: 80px auto;
+  padding: 15px;
+}
