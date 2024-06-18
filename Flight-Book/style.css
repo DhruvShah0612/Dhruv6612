@@ -137,3 +137,45 @@ ul {
   margin: 80px auto;
   padding: 15px;
 }
+
+.client-image{
+  width: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.client-page{
+  display: flex;
+  gap: 15px;
+}
+
+.client-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.client-para{
+  width: 250px;
+}
+
+.stars{
+  color: #4440e2;
+  font-size: 18px;
+}
+
+.third-container{
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.client-heading{
+  text-align: center;
+  color: #c8cbd5;
+  font-size: bold;
+}
+
+.head-txt{
+  color: #4440e2;
+}
