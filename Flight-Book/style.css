@@ -1,55 +1,82 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set height and width for full viewport */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar start */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
+  color: white;
   padding: 10px 20px;
-  margin: 2.5em 0;
 }
 
-.logo {
+.navbar .logo h2 {
+  margin: 0;
   color: #605dec;
 }
 
-.part-two {
+.navbar .part-two {
   display: flex;
-  gap: 10px;
+  align-items: center;
 }
 
-ul {
-  list-style-type: none;
+.navbar .part-two ul {
   display: flex;
-  gap: 1em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .part-two ul li {
+  margin: 0 15px;
   cursor: pointer;
+  color: #4440e2;
 }
 
-.btn {
+.navbar .btn {
   background-color: #605dec;
-  color: white;
   border: none;
-  padding: 17px 20px;
-  border-radius: 3px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
   cursor: pointer;
+}
+/* navbar end */
+
+main {
+  padding: 20px;
 }
 
 .text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .text > h2 {
-  font-size: 50px;
+  font-size: 52px;
   margin: 0;
-  padding: 50px 10px;
   color: #605dec;
-  width: 302px;
 }
+/* .. */
 
+/* navigation part start  */
 .navigation {
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-top: 30px;
 }
 
 .nav-part {
@@ -68,17 +95,17 @@ ul {
   height: 30px;
 }
 
-.section-img {
-  width: 300px;
-  border-radius: 10px;
+.search-btn {
+  background-color: #605dec;
+  color: white;
+  border: none;
+  border-radius: 0px 5px 5px 0;
+  padding: 10px 20px;
+  cursor: pointer;
 }
+/* navigation end  */
 
-.sec-para {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px;
-}
-
+/* image section start */
 .image-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -92,10 +119,27 @@ ul {
   grid-column: span 3;
 }
 
+.image-border {
+  border: 1px solid lightgray;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 11px;
+}
+
 .section-img,
 .image-down img {
   width: 100%;
   height: auto;
+}
+
+.main-paragraph {
+  padding: 5px 10px;
+  line-height: 1.5;
+}
+
+.sec-para {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
 }
 
 .sec-para p {
@@ -106,32 +150,33 @@ ul {
   margin: 0;
   padding: 0 10px;
 }
+/* image section end */
 
-.main-paragraph {
-  padding: 5px 10px;
-  line-height: 1.5;
-}
-
-.image-border {
-  border: 1px solid lightgray;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 11px;
-}
-
-/* .image{
-  width: 300px;
-} */
-
-/* .image-section{
-  display: flex;
-  justify-content: center;
-  padding: 40px;
-} */
-
-.btn.button {
+.explore-btn {
+  background-color: #605dec;
+  color: #fff;
   display: block;
   margin: 80px auto;
+  border: none;
+  border-radius: 5px;
   padding: 15px;
+}
+
+/* third client section start */
+.client-heading {
+  text-align: center;
+  color: #6e7491;
+  font-size: bold;
+}
+
+.head-txt {
+  color: #4440e2;
+}
+
+.third-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 60px;
 }
 
 .client-image {
@@ -143,16 +188,7 @@ ul {
 .client-page {
   display: flex;
   gap: 15px;
-}
-
-.client-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.client-para {
-  width: 250px;
+  margin: 45px;
 }
 
 .stars {
@@ -160,22 +196,17 @@ ul {
   font-size: 18px;
 }
 
-.third-container {
-  display: flex;
-  justify-content: center;
-  gap: 70px;
+.client-para {
+  width: 283px;
+  padding-top: 10px;
 }
 
-.client-heading {
-  text-align: center;
-  color: #6e7491;
-  font-size: bold;
-}
-
-.head-txt {
+.client-txt {
   color: #4440e2;
 }
+/* client page end */
 
+/* footer start  */
 .footer-title {
   color: #4440e2;
   margin-left: 220px;
@@ -217,10 +248,10 @@ ul {
 
 .download-text,
 .app-store {
-  color: white; /* Change the text color */
-  font-size: 20px; /* Change the font size */
-  text-align: center; /* Center the text */
-  margin: 0; /* Remove default paragraph margins */
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
 }
 
 .download-text {
@@ -228,7 +259,7 @@ ul {
 }
 
 .footer-end {
-  /* border: 1px solid lightgray; */
+  border: 1px solid lightgray;
   padding: 20px;
   margin: 30px;
 }
