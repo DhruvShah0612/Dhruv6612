@@ -141,7 +141,9 @@ main {
   justify-content: space-between;
   padding: 0 10px;
 }
-
+.location {
+  color: #40ccb3;
+}
 .sec-para p {
   margin: 0;
 }
