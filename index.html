@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Air IQ Login</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-        <div class="container">
-            <div class="login-box">
-                <div class="logo">
-                    <img src="assets/logo.png" alt="Air IQ Logo">
-                </div>
-                <form>
-                    <div class="error-message" id="error-message">Invalid Input</div>
-                    <input type="text" placeholder="Username" class="input-field" id="username">
-                    <input type="password" placeholder="Password" class="input-field" id="password">
-                    <button type="submit" class="login-button">AGENT LOGIN</button>
-                </form>
-                <div class="register-link">
-                    <a href="signup.html">Not an account? Register Now</a>
-                </div>
-                <div class="footer">
-                    <img src="assets/iata.png" alt="IATA Logo">
-                    <p>CONTACT US | TERMS & CONDITIONS | PRIVACY POLICY</p>
-                    <p>POWERED BY: UDAANHOTELS.COM</p>
-                </div>
-            </div>
-        </div>
-        <script src="script.js"></script>
-    </body>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Flight Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="search-container">
+            <h2>Search Flights</h2>
+            <form id="search-form">
+                <label for="from">From:</label>
+                <input type="text" id="from" name="from" required>
+                
+                <label for="to">To:</label>
+                <input type="text" id="to" name="to" required>
+                
+                <label for="departure-date">Departure Date:</label>
+                <input type="date" id="departure-date" name="departure-date" required>
+                
+                <label for="return-date">Return Date:</label>
+                <input type="date" id="return-date" name="return-date">
+                
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <section class="results-container">
+            <h2>Available Flights</h2>
+            <div id="flight-results"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Flight Booking. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
 </html>
