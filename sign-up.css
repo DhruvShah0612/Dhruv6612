@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-image: url(assets/bg.jpg);
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.signup-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+.signup-box h2 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.signup-box p {
+    margin: 0;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-group input, .form-group select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.verify-button {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-button {
+    padding: 0.75rem;
+    background: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+.footer {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.footer img {
+    width: 50px;
+    margin-top: 1rem;
+}
