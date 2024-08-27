@@ -5264,6 +5264,8 @@ small {
     padding-top: -0.5rem !important;
 }
 
+/* my style  */
+
 .footer-bottom .fa-brands, .footer-bottom .fa-solid {
     margin-left: 30px;
     color: #1351a7; /* Adjust the color as needed */
@@ -5300,3 +5302,41 @@ small {
 .bgColor a:hover {
     color: #ddd; /* Optional: Change link color on hover */
 }
+
+/* About Us content size */
+.about-us-content h1 {
+    font-size: 2.5rem; /* Adjust as needed */
+}
+
+.about-us-content p {
+    font-size: 1.125rem; /* Adjust as needed */
+}
+
+/* Navbar list text color */
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ddd; /* Optional: Change link color on hover */
+}
+
+.btn-white {
+    /* background-color: white; */
+    color: #fff; /* Text color */
+    border: 1px solid #fff; /* Border color */
+    padding: 10px 20px; /* Padding for the button */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.btn-white:hover {
+    background-color: #fff;
+    color: #000; /* Text color on hover */
+}
+
+/* my style end  */
