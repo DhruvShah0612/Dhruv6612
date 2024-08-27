@@ -1138,7 +1138,7 @@ select.form-control.has-value {
 }
 
 .hero-shape {
-    position: absolute;
+   position: absolute;
     left: auto;
     top: -70%;
     right: -44%;
@@ -5037,9 +5037,9 @@ small {
     margin-top: auto;
 }
 
-/* .bgColor {
+.bgColor {
     background-color: #ffffff;
-} */
+}
 
 .footerImg img {
     width: 70%;
@@ -5051,7 +5051,7 @@ small {
 }
 
 .footer-section {
-    background-image: url('../img/footer-bg.jpg');
+    /* background-image: url('../img/footer-bg.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -5266,7 +5266,7 @@ small {
 
 .footer-bottom .fa-brands, .footer-bottom .fa-solid {
     margin-left: 30px;
-    color: #000; /* Adjust the color as needed */
+    color: #1351a7; /* Adjust the color as needed */
 }
 
 .footer-bottom .text-right {
@@ -5276,8 +5276,27 @@ small {
 .fa-brands, .fa-solid {
     cursor: pointer;
     margin-left: 10px; /* Adjust spacing as needed */
+    /* color: #1351a7; */
 }
 
 .fa-brands:hover, .fa-solid:hover {
-    color: #007bff; /* Change color on hover if desired */
+    color: #1351a7; /* Change color on hover if desired */
+}
+
+.bgColor {
+    background: linear-gradient(45deg, #1f1f1f, #134694, #154088);
+    color: white;
+}
+
+.bgColor h6,
+.bgColor h4,
+.bgColor ul,
+.bgColor li,
+.bgColor a,
+.bgColor span {
+    color: white;
+}
+
+.bgColor a:hover {
+    color: #ddd; /* Optional: Change link color on hover */
 }
